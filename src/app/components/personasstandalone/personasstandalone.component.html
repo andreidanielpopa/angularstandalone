@@ -1,0 +1,15 @@
+<div>
+    <!-- <ul class="list-group">
+        <li class="list-group-item" *ngFor="let persona of personas">
+            {{persona.Nombre}}, {{persona.Email}}, {{persona.Edad}}
+        </li>
+    </ul> -->
+
+    <ul class="list-group">
+        @for (persona of personas; track persona){
+            <li class="list-group-item">
+                {{persona.Nombre}}, {{persona.Email}}, {{persona.Edad}}
+            </li>
+        }
+    </ul>
+</div>
